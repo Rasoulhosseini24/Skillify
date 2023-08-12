@@ -1,0 +1,299 @@
+:root{
+    --bs-bgColor: #22272e;
+    --bs-ColorOne: #a97155;
+    --bs-ColorTwo: #32594a;
+    --bs-ColorThree: #0c1c24;
+    --bs-ColorFour: #1c2c24;
+    --bs-font1:'Lato', sans-serif;
+    --bs-font2:'Permanent Marker', cursive;
+    --bs-boxshadow1:0px 0px 34px 10px rgba(255, 255, 255, 0.13);
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--bs-font1);
+}
+
+@media only screen and (max-width:990px){
+     .contact{
+      flex-direction: column !important;
+     }
+     #form-cont{
+      padding: 0 !important;
+     }
+  
+     .form{
+      margin: 0 auto;
+      width: 60% !important;
+     }
+  
+     
+  }
+
+@media only screen and (max-width: 560px) {
+  
+  .form{
+    margin: 0 auto;
+    width: 100% !important;
+   }
+  
+  
+  }
+
+
+
+
+@media only screen and (max-width:767px){
+    .intro{
+    text-align: center;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .left-intro img{
+        height:max-content !important;
+        
+    }
+}
+
+@media only screen and (max-width:991px){
+
+    #logo{
+        display: none;
+     }
+
+     .carousel{
+        width: 100% !important;
+     }
+
+    }
+
+    @media only screen and (max-width:1200px){
+
+         .carousel{
+            width: 100% !important;
+            transition: all 500ms ease;
+         }
+    
+        }
+
+#logo img{
+border-radius: 50%;
+width: 120px;
+object-fit: contain;
+object-position: center;
+}
+
+.navbar-brand{
+    font-size: 40px;
+}
+
+#navbarNav ul li{
+height: 40px;
+transition: border 300ms ease-in-out;
+text-align: center;
+}
+
+
+#navbarNav ul li:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.555);
+}
+
+
+.caro-4{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.caro-5{
+    color: white;
+    background-color:#000000a4;
+}
+
+.carousel-caption p{
+    font-weight: bold;
+}
+
+
+.left-intro img{
+
+    object-fit: contain;
+    object-position: center;
+    height: 120px;
+    
+}
+
+
+.card{
+    padding: 0;
+    border: none;
+}
+
+.card img{
+    object-fit: cover;
+    height: 300px;
+}
+
+.kobe{
+    font-size: 20px;
+    line-height: 33px;
+    text-align: justify;
+    direction: ltr;
+}
+
+#bryant{
+
+background: linear-gradient(to right, gold,purple,gold,purple);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+font-size: 33px;
+text-transform: uppercase;
+}
+
+.bryant{
+    font-size: 60px;
+    direction: ltr;
+}
+
+
+/* contact CSS*/
+
+.form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 40%;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255)
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-bottom: 80px;
+}
+
+
+
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+form label,
+form legend {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  
+}
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+  box-sizing: border-box;
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  border-radius: 3px;
+
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  border: none;
+  outline: none;
+}
+form [type="text"],
+form [type="email"],
+.StripeElement {
+  width: 100%;
+}
+form [type="button"],
+form [type="submit"],
+form [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+form [type="button"]:focus,
+form [type="submit"]:focus,
+form [type="reset"]:focus {
+  outline: none;
+}
+
+form select {
+  text-transform: none;
+}
+
+
+#my-form-status{
+    width: 90%;
+    max-width: 200px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0 auto;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-top: 10px;
+      }
+
+      #my-form-status.success {
+        background-color: rgb(193, 255, 101);
+        animation: status 4s ease forwards;
+      }
+      #my-form-status.error {
+        background-color: rgb(250, 129, 92);
+        color: white;
+        animation: status 4s ease forwards;
+      }
+      @keyframes status {
+        0% {
+          opacity: 1;
+          pointer-events: all;
+        }
+        90% {
+          opacity: 1;
+          pointer-events: all;
+        }
+        100% {
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+
+
+    
